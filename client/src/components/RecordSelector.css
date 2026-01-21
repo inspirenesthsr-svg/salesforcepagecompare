@@ -1,0 +1,153 @@
+.record-selector {
+  margin-top: 30px;
+}
+
+.record-selector-header {
+  margin-bottom: 20px;
+}
+
+.record-selector-header h3 {
+  color: #0176d3;
+  margin-bottom: 5px;
+}
+
+.record-selector-header p {
+  color: #706e6b;
+  font-size: 14px;
+}
+
+.record-selector-loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.records-list {
+  margin: 20px 0;
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.record-card {
+  background: white;
+  border: 2px solid #dddbda;
+  border-radius: 4px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.record-card:hover {
+  border-color: #0176d3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.record-card.selected {
+  border-color: #0176d3;
+  background: #e8f4f8;
+}
+
+.record-name {
+  font-weight: 600;
+  color: #3e3e3c;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.record-id {
+  color: #706e6b;
+  font-size: 12px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.selected-indicator {
+  margin-top: 10px;
+  color: #04844b;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.no-records {
+  text-align: center;
+  padding: 40px;
+  color: #706e6b;
+  background: #f3f2f2;
+  border-radius: 4px;
+}
+
+.record-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.capture-progress {
+  text-align: center;
+  padding: 30px;
+  background: #f3f2f2;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.capture-progress .spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0176d3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+.progress-note {
+  color: #706e6b;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.capture-result {
+  background: #e8f4f8;
+  border: 1px solid #0176d3;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.capture-result h4 {
+  color: #04844b;
+  margin-bottom: 15px;
+}
+
+.capture-info {
+  color: #3e3e3c;
+}
+
+.capture-info p {
+  margin: 8px 0;
+}
+
+.related-lists-info {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dddbda;
+}
+
+.related-lists-info ul {
+  margin: 10px 0 0 20px;
+  list-style-type: disc;
+}
+
+.related-lists-info li {
+  margin: 5px 0;
+  color: #3e3e3c;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
